@@ -37,21 +37,22 @@ h2{font-size:clamp(28px,3.6vw,42px);color:var(--black);text-transform:uppercase;
 
 /* header */
 header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:84px}
-.logo{display:flex;align-items:center;gap:14px}
-.logo-kb{font-size:30px;font-weight:300;letter-spacing:1px;color:var(--grey)}
+.nav{display:flex;align-items:center;height:84px}
+.logo{display:flex;align-items:center;gap:15px;margin-right:46px;flex-shrink:0}
+.logo-kb{font-size:52px;font-weight:300;letter-spacing:1px;color:var(--grey);line-height:1}
 .logo-kb b{color:var(--teal);font-weight:600}
-.logo-sep{width:1px;height:36px;background:var(--line)}
+.logo-sep{width:1px;height:48px;background:var(--line)}
 .logo-text{font-size:15px;font-weight:600;letter-spacing:4px;color:var(--grey);text-transform:uppercase;line-height:1.35}
 .logo-text em{font-style:normal;color:var(--teal);display:block}
-.nav-links{display:flex;gap:30px;font-weight:600;font-size:13.5px;letter-spacing:1.5px;text-transform:uppercase}
-.nav-links a{position:relative;padding:6px 0;color:var(--ink-soft)}
+.nav-links{display:flex;gap:24px;font-weight:600;font-size:13.5px;letter-spacing:1.5px;text-transform:uppercase}
+.nav-links a{position:relative;padding:6px 0;color:var(--ink-soft);white-space:nowrap}
 .nav-links a:hover{color:var(--black)}
 .nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--teal);transition:width .25s}
 .nav-links a:hover::after,.nav-links a.active::after{width:100%}
 .nav-links a.active{color:var(--black)}
-.nav-cta{display:flex;align-items:center;gap:14px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:700;font-size:13.5px;letter-spacing:1.5px;text-transform:uppercase;padding:15px 30px;border-radius:var(--radius);border:none;cursor:pointer;transition:.2s;font-family:var(--font)}
+.nav-cta{display:flex;align-items:center;gap:12px;margin-left:auto;flex-shrink:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:700;font-size:13.5px;letter-spacing:1.5px;text-transform:uppercase;padding:15px 30px;border-radius:var(--radius);border:1px solid transparent;cursor:pointer;transition:.2s;font-family:var(--font);white-space:nowrap}
+.nav-cta .btn{padding:14px 24px;line-height:1}
 .btn-teal{background:var(--teal);color:var(--black)}
 .btn-teal:hover{background:var(--teal-deep);color:#fff}
 .btn-dark{background:var(--black);color:#fff}
@@ -64,7 +65,7 @@ header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.96);backdro
 .btn-phone:hover{border-color:var(--teal)}
 .burger{display:none;background:none;border:none;cursor:pointer;width:44px;height:44px;flex-direction:column;justify-content:center;align-items:center;gap:5px}
 .burger span{width:24px;height:2px;background:var(--black)}
-@media(max-width:1060px){
+@media(max-width:1200px){
   .nav-links{position:fixed;inset:84px 0 auto 0;background:#fff;flex-direction:column;gap:0;padding:10px 24px 24px;border-bottom:1px solid var(--line);display:none}
   .nav-links.open{display:flex}
   .nav-links a{padding:15px 0;border-bottom:1px solid var(--line)}
@@ -76,8 +77,10 @@ header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.96);backdro
   .nav-cta .btn-teal{display:none}
 }
 @media(max-width:420px){
-  .logo-text{font-size:12.5px;letter-spacing:3px}
-  .logo-kb{font-size:26px}
+  .logo{gap:11px;margin-right:0}
+  .logo-text{font-size:12px;letter-spacing:2.5px}
+  .logo-kb{font-size:40px}
+  .logo-sep{height:38px}
 }
 
 /* hero */
