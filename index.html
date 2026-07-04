@@ -3,8 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kitchens Bespoke — Luxury Kitchen Design, East Grinstead | Est. 2008</title>
-<meta name="description" content="Kitchens Bespoke — independent family-run kitchen design studio in East Grinstead since 2008. Bespoke kitchens, bedrooms and home offices, designed, project-managed and installed. Book a free design consultation: 01342 313133.">
+<title>Kitchens Bespoke — Bespoke Kitchens, Bedrooms & Home Offices, East Grinstead | Est. 2008</title>
+<meta name="description" content="Kitchens Bespoke — independent family-run design studio in East Grinstead since 2008. Bespoke kitchens, fitted bedrooms & wardrobes and home offices, designed, project-managed and installed. Book a free design consultation: 01342 313133.">
+<link rel="canonical" href="https://kitchensbespoke.co.uk/">
+<meta property="og:title" content="Kitchens Bespoke — Bespoke Kitchens, Bedrooms & Home Offices">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/hero-1.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -32,198 +36,7 @@
   ]
 }
 </script>
-<style>
-:root{
-  --teal:#77ccc8;
-  --teal-deep:#4fa8a3;
-  --teal-pale:#e9f6f5;
-  --grey:#58595b;
-  --black:#262729;
-  --ink:#2e2f31;
-  --ink-soft:#55575a;
-  --muted:#8b8d90;
-  --line:#e7e8e9;
-  --bg:#fafafa;
-  --card:#ffffff;
-  --radius:4px;
-  --shadow:0 14px 40px rgba(38,39,41,.1);
-  --font:"Raleway",sans-serif;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:92px}
-body{font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit;text-decoration:none}
-ul{list-style:none}
-.container{max-width:1200px;margin:0 auto;padding:0 24px}
-section{padding:96px 0}
-h1,h2,h3{font-weight:600;line-height:1.18;letter-spacing:.5px}
-h2{font-size:clamp(28px,3.6vw,42px);color:var(--black);text-transform:uppercase;letter-spacing:3px;font-weight:500}
-.kicker{display:inline-block;font-size:12px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:var(--teal-deep);margin-bottom:16px}
-.section-head{max-width:680px;margin-bottom:52px}
-.section-head p{color:var(--muted);margin-top:16px;font-size:16px;font-weight:400}
-
-/* topbar */
-.topbar{background:var(--black);color:#b9babc;font-size:12.5px;padding:8px 0;letter-spacing:.5px}
-.topbar .container{display:flex;justify-content:space-between;align-items:center;gap:12px}
-.topbar a{font-weight:700;color:var(--teal)}
-@media(max-width:720px){.topbar .addr{display:none}}
-
-/* header */
-header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:84px}
-.logo{display:flex;align-items:center;gap:14px}
-.logo-kb{font-size:30px;font-weight:300;letter-spacing:1px;color:var(--grey)}
-.logo-kb b{color:var(--teal);font-weight:600}
-.logo-sep{width:1px;height:36px;background:var(--line)}
-.logo-text{font-size:15px;font-weight:600;letter-spacing:4px;color:var(--grey);text-transform:uppercase;line-height:1.35}
-.logo-text em{font-style:normal;color:var(--teal);display:block}
-.nav-links{display:flex;gap:32px;font-weight:600;font-size:13.5px;letter-spacing:1.5px;text-transform:uppercase}
-.nav-links a{position:relative;padding:6px 0;color:var(--ink-soft)}
-.nav-links a:hover{color:var(--black)}
-.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--teal);transition:width .25s}
-.nav-links a:hover::after{width:100%}
-.nav-cta{display:flex;align-items:center;gap:14px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:700;font-size:13.5px;letter-spacing:1.5px;text-transform:uppercase;padding:15px 30px;border-radius:var(--radius);border:none;cursor:pointer;transition:.2s;font-family:var(--font)}
-.btn-teal{background:var(--teal);color:var(--black)}
-.btn-teal:hover{background:var(--teal-deep);color:#fff}
-.btn-dark{background:var(--black);color:#fff}
-.btn-dark:hover{background:#000}
-.btn-ghost{background:transparent;border:1px solid rgba(255,255,255,.55);color:#fff}
-.btn-ghost:hover{border-color:var(--teal);color:var(--teal)}
-.btn-phone{background:transparent;border:1px solid var(--line);color:var(--black);padding:13px 22px}
-.btn-phone:hover{border-color:var(--teal)}
-.burger{display:none;background:none;border:none;cursor:pointer;width:44px;height:44px;flex-direction:column;justify-content:center;align-items:center;gap:5px}
-.burger span{width:24px;height:2px;background:var(--black)}
-@media(max-width:1060px){
-  .nav-links{position:fixed;inset:84px 0 auto 0;background:#fff;flex-direction:column;gap:0;padding:10px 24px 24px;border-bottom:1px solid var(--line);display:none}
-  .nav-links.open{display:flex}
-  .nav-links a{padding:15px 0;border-bottom:1px solid var(--line)}
-  .burger{display:flex}
-  .nav-cta .btn-phone{display:none}
-}
-@media(max-width:560px){
-  .logo-text{display:none}
-  .logo-sep{display:none}
-  .nav-cta .btn-teal{padding:12px 16px;font-size:12px;white-space:nowrap}
-}
-
-/* hero */
-.hero{position:relative;min-height:82vh;display:flex;align-items:center;color:#fff;overflow:hidden}
-.hero .bgimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero .veil{position:absolute;inset:0;background:linear-gradient(100deg,rgba(20,22,24,.82) 0%,rgba(20,22,24,.55) 55%,rgba(20,22,24,.25) 100%)}
-.hero .container{position:relative;z-index:1;padding-top:70px;padding-bottom:70px}
-.badge-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
-.badge{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:2px;padding:8px 16px;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#e8eaea}
-.badge .star{color:var(--teal)}
-.hero h1{font-size:clamp(36px,5vw,64px);color:#fff;font-weight:300;letter-spacing:2px;text-transform:uppercase;max-width:820px}
-.hero h1 b{font-weight:600;color:var(--teal)}
-.hero .sub{margin:22px 0 34px;color:#cfd2d3;font-size:17px;max-width:560px;font-weight:400}
-.hero-actions{display:flex;flex-wrap:wrap;gap:16px}
-.hero-cred{position:absolute;bottom:0;left:0;right:0;background:rgba(20,22,24,.72);backdrop-filter:blur(8px);border-top:1px solid rgba(255,255,255,.12)}
-.hero-cred .container{display:flex;gap:34px;flex-wrap:wrap;padding-top:16px;padding-bottom:16px;justify-content:space-between}
-.hero-cred span{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#b9babc;font-weight:600}
-@media(max-width:720px){.hero-cred .container{gap:10px;flex-direction:column}}
-
-/* portfolio */
-.folio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.folio{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/3;background:#dfe1e2;cursor:default}
-.folio.tall{grid-row:span 2;aspect-ratio:auto}
-.folio img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
-.folio:hover img{transform:scale(1.05)}
-.folio .cap{position:absolute;left:0;right:0;bottom:0;padding:44px 20px 16px;background:linear-gradient(transparent,rgba(20,22,24,.85));color:#fff;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600}
-.folio .cap small{display:block;font-size:11px;color:#b9babc;font-weight:400;letter-spacing:1px;text-transform:none}
-@media(max-width:960px){.folio-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:560px){.folio-grid{grid-template-columns:1fr}.folio.tall{grid-row:auto;aspect-ratio:4/3}}
-.folio-note{margin-top:20px;text-align:center;font-size:13px;color:var(--muted);letter-spacing:.5px}
-
-/* process */
-.process{background:var(--black);color:#fff}
-.process h2{color:#fff}
-.process .section-head p{color:#9fa1a4}
-.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.step-card{border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);padding:34px 26px;position:relative}
-.step-card b{font-size:52px;font-weight:300;color:var(--teal);line-height:1;display:block;margin-bottom:18px}
-.step-card h4{font-size:15px;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:10px;color:#fff}
-.step-card p{font-size:13.5px;color:#9fa1a4}
-@media(max-width:960px){.steps-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:560px){.steps-grid{grid-template-columns:1fr}}
-
-/* brands */
-.brands{padding:70px 0;border-bottom:1px solid var(--line)}
-.brand-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
-.brand-chip{border:1px solid var(--line);background:var(--card);border-radius:2px;padding:13px 26px;font-weight:600;font-size:13px;letter-spacing:2.5px;text-transform:uppercase;color:var(--grey);transition:.2s}
-.brand-chip:hover{border-color:var(--teal);color:var(--black)}
-
-/* reviews */
-.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.review-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px}
-.review-card .stars{color:var(--teal-deep);letter-spacing:3px;margin-bottom:16px;font-size:16px}
-.review-card p{font-size:15px;color:var(--ink-soft);margin-bottom:18px;font-weight:400;font-style:italic;line-height:1.7}
-.review-card .who{font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--black)}
-.review-card .who small{display:block;color:var(--muted);font-weight:500;letter-spacing:1px;margin-top:2px}
-@media(max-width:960px){.reviews-grid{grid-template-columns:1fr}}
-.review-cta{margin-top:26px;text-align:center;font-size:14px;color:var(--muted)}
-.review-cta a{color:var(--teal-deep);font-weight:700}
-
-/* consultation form */
-.consult{background:var(--teal-pale)}
-.consult .container{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:56px;align-items:start}
-.consult-info h2{margin-bottom:18px}
-.consult-info p{color:var(--ink-soft);margin-bottom:24px;font-size:15.5px}
-.consult-points{display:flex;flex-direction:column;gap:16px}
-.consult-point{display:flex;gap:14px;align-items:flex-start;font-size:14.5px;color:var(--ink-soft)}
-.consult-point .tick{width:26px;height:26px;border-radius:50%;background:var(--teal);color:var(--black);display:grid;place-items:center;flex-shrink:0;font-size:13px;font-weight:800}
-.form-card{background:var(--card);border-radius:var(--radius);padding:40px;box-shadow:var(--shadow)}
-.form-card h3{font-size:19px;letter-spacing:2.5px;text-transform:uppercase;font-weight:600;margin-bottom:24px;color:var(--black)}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.form-grid .full{grid-column:1/-1}
-.form-card label{display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--grey);margin-bottom:7px}
-.form-card input,.form-card select,.form-card textarea{width:100%;padding:14px;border-radius:2px;border:1px solid var(--line);font-family:var(--font);font-size:15px;background:#fff;transition:border-color .15s}
-.form-card input:focus,.form-card select:focus,.form-card textarea:focus{outline:none;border-color:var(--teal-deep)}
-.form-card textarea{resize:vertical;min-height:90px}
-.form-success{display:none;background:#eaf6f0;border:1px solid #bfe3d0;color:#186a43;padding:16px 18px;border-radius:var(--radius);font-weight:600;font-size:14.5px;margin-top:18px}
-@media(max-width:960px){.consult .container{grid-template-columns:minmax(0,1fr);gap:40px}}
-@media(max-width:560px){.form-grid{grid-template-columns:1fr}.form-card{padding:26px 20px}}
-
-/* showroom */
-.showroom .container{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:52px;align-items:start}
-.contact-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:34px;margin-bottom:18px}
-.contact-card h3{font-size:16px;letter-spacing:2.5px;text-transform:uppercase;font-weight:700;color:var(--black);margin-bottom:18px}
-.contact-line{display:flex;gap:14px;align-items:flex-start;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
-.contact-line:last-child{border-bottom:none}
-.contact-line svg{flex-shrink:0;margin-top:2px}
-.contact-line a{font-weight:700;color:var(--black)}
-.contact-line a:hover{color:var(--teal-deep)}
-.hours-table{width:100%;border-collapse:collapse;font-size:14.5px}
-.hours-table td{padding:10px 0;border-bottom:1px solid var(--line)}
-.hours-table tr:last-child td{border-bottom:none}
-.hours-table td:last-child{text-align:right;font-weight:700}
-.map-frame{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);min-height:470px;box-shadow:var(--shadow)}
-.map-frame iframe{width:100%;height:100%;border:0;min-height:470px}
-@media(max-width:960px){.showroom .container{grid-template-columns:minmax(0,1fr)}.map-frame{min-height:340px}.map-frame iframe{min-height:340px}}
-
-/* footer */
-footer{background:var(--black);color:#9fa1a4;padding:60px 0 100px;font-size:14px}
-.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:38px;margin-bottom:42px}
-footer h4{color:#fff;font-size:13px;letter-spacing:2.5px;text-transform:uppercase;font-weight:700;margin-bottom:16px}
-footer li{padding:5px 0}
-footer a:hover{color:var(--teal)}
-.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12.5px;letter-spacing:.5px}
-@media(max-width:960px){.footer-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.footer-grid{grid-template-columns:1fr}}
-
-/* sticky mobile bar */
-.mobile-bar{position:fixed;bottom:0;left:0;right:0;z-index:70;display:none;grid-template-columns:1.1fr 1fr;background:var(--black);border-top:1px solid rgba(255,255,255,.12);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px}
-.mobile-bar a{display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 6px;border-radius:var(--radius);font-weight:700;font-size:12.5px;letter-spacing:1.5px;text-transform:uppercase}
-.mobile-bar .call{background:var(--teal);color:var(--black)}
-.mobile-bar .consult-link{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.2)}
-@media(max-width:960px){.mobile-bar{display:grid}footer{padding-bottom:130px}}
-
-/* reveal */
-.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
-.reveal.in{opacity:1;transform:none}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -244,9 +57,10 @@ footer a:hover{color:var(--teal)}
       <span class="logo-text">Kitchens<em>Bespoke</em></span>
     </a>
     <nav class="nav-links" id="navLinks">
-      <a href="#portfolio">Portfolio</a>
-      <a href="#process">Our Process</a>
-      <a href="#brands">Brands</a>
+      <a href="kitchens.html">Kitchens</a>
+      <a href="bedrooms.html">Bedrooms</a>
+      <a href="home-offices.html">Home Offices</a>
+      <a href="#process">Process</a>
       <a href="#reviews">Reviews</a>
       <a href="#showroom">Showroom</a>
     </nav>
@@ -260,7 +74,11 @@ footer a:hover{color:var(--teal)}
 
 <!-- hero -->
 <div class="hero">
-  <img class="bgimg" src="https://kitchensbespoke.co.uk/wp-content/uploads/2026/05/Lloyd-Gibbons-1-Large.jpeg" alt="Bespoke kitchen by Kitchens Bespoke, East Grinstead" fetchpriority="high">
+  <div class="slides" aria-hidden="true">
+    <img src="assets/hero-1.jpg" alt="" fetchpriority="high">
+    <img src="assets/hero-2.jpg" alt="" loading="lazy">
+    <img src="assets/hero-3.jpg" alt="" loading="lazy">
+  </div>
   <div class="veil"></div>
   <div class="container">
     <div class="badge-row">
@@ -268,11 +86,11 @@ footer a:hover{color:var(--teal)}
       <span class="badge">Est. 2008 · Family run</span>
       <span class="badge">KBSA · Guild of Master Craftsmen</span>
     </div>
-    <h1>Kitchens designed<br><b>around your life.</b></h1>
-    <p class="sub">An independent, family-run design studio in East Grinstead — bespoke kitchens, bedrooms and home offices, designed, project-managed and installed to an exceptional standard since 2008.</p>
+    <h1>Designed<br><b>around your life.</b></h1>
+    <p class="sub">An independent, family-run design studio in East Grinstead — bespoke kitchens, fitted bedrooms &amp; wardrobes and home offices, designed, project-managed and installed to an exceptional standard since 2008.</p>
     <div class="hero-actions">
       <a class="btn btn-teal" href="#consult">Book a Free Design Consultation</a>
-      <a class="btn btn-ghost" href="#portfolio">View Our Work</a>
+      <a class="btn btn-ghost" href="#make">What We Make</a>
     </div>
   </div>
   <div class="hero-cred">
@@ -285,24 +103,52 @@ footer a:hover{color:var(--teal)}
   </div>
 </div>
 
+<!-- what we make -->
+<section id="make">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">What we make</span>
+      <h2>Three rooms, one standard</h2>
+      <p>Bespoke kitchens are our heart — but the same design, craftsmanship and project management goes into our fitted bedrooms and home offices too.</p>
+    </div>
+    <div class="make-grid">
+      <a class="make-card reveal" href="kitchens.html">
+        <img src="assets/kit-1.jpg" alt="Bespoke kitchen by Kitchens Bespoke" loading="lazy">
+        <div class="veil"></div>
+        <div class="cap"><h3>Kitchens</h3><p>Handleless German &amp; classic English kitchens, designed around how you cook and live.</p><span class="go">View kitchens →</span></div>
+      </a>
+      <a class="make-card reveal" href="bedrooms.html">
+        <img src="assets/bed-1.jpg" alt="Fitted bedroom and wardrobes" loading="lazy">
+        <div class="veil"></div>
+        <div class="cap"><h3>Bedrooms</h3><p>Fitted wardrobes and bedroom furniture that make the most of every corner.</p><span class="go">View bedrooms →</span></div>
+      </a>
+      <a class="make-card reveal" href="home-offices.html">
+        <img src="assets/office-1.jpg" alt="Bespoke home office and study" loading="lazy">
+        <div class="veil"></div>
+        <div class="cap"><h3>Home Offices</h3><p>Studies and home offices built for focus — and beautiful enough to work in all day.</p><span class="go">View home offices →</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- portfolio -->
 <section id="portfolio">
   <div class="container">
     <div class="section-head reveal">
       <span class="kicker">Portfolio</span>
-      <h2>Recent projects</h2>
-      <p>Every kitchen here was designed by Rachael, project-managed by Guy, and fitted by our own team. No stock photos — this is our work, in real homes near you.</p>
+      <h2>Recent kitchens</h2>
+      <p>Every kitchen here was designed by Rachael, project-managed by Guy, and fitted by our own team. No stock photos — this is our work, in real homes near you. <a href="kitchens.html" style="color:var(--teal-deep);font-weight:700">See all kitchens →</a></p>
     </div>
     <div class="folio-grid">
-      <div class="folio tall reveal"><img src="https://kitchensbespoke.co.uk/wp-content/uploads/2026/05/Lloyd-Gibbons-2-Large.jpeg" alt="Character family home kitchen, East Grinstead" loading="lazy"><span class="cap">Character family home<small>East Grinstead · 2026</small></span></div>
-      <div class="folio reveal"><img src="https://kitchensbespoke.co.uk/wp-content/uploads/2026/01/Hope-Lacy-2-Large.jpeg" alt="Large family home kitchen, Reigate" loading="lazy"><span class="cap">Large family home<small>Reigate</small></span></div>
-      <div class="folio reveal"><img src="https://kitchensbespoke.co.uk/wp-content/uploads/2025/10/The-Retreat-1-Large.jpeg" alt="Detached family home kitchen, West Hoathly" loading="lazy"><span class="cap">The Retreat<small>West Hoathly</small></span></div>
-      <div class="folio reveal"><img src="https://kitchensbespoke.co.uk/wp-content/uploads/2025/06/Credit-The-Light-Room-Media-18-Large.jpeg" alt="Country cottage kitchen, Ashurst Wood" loading="lazy"><span class="cap">Country cottage<small>Ashurst Wood</small></span></div>
-      <div class="folio reveal"><img src="https://kitchensbespoke.co.uk/wp-content/uploads/2024/12/Willow-End-1-Large.jpeg" alt="Large family kitchen, East Grinstead" loading="lazy"><span class="cap">Willow End<small>East Grinstead</small></span></div>
-      <div class="folio tall reveal"><img src="https://kitchensbespoke.co.uk/wp-content/uploads/2024/10/The-Farmhouse-3-Large.jpeg" alt="Farmhouse shaker kitchen, Lingfield" loading="lazy"><span class="cap">The Farmhouse<small>Lingfield · classic Shaker</small></span></div>
-      <div class="folio reveal"><img src="https://kitchensbespoke.co.uk/wp-content/uploads/2024/12/Colville-House-1-Large.jpeg" alt="Stylish conversion kitchen, Crawley Down" loading="lazy"><span class="cap">Colville House<small>Crawley Down</small></span></div>
-      <div class="folio reveal"><img src="https://kitchensbespoke.co.uk/wp-content/uploads/2024/06/The-Light-Room-Media-2-Large.jpeg" alt="Modern family kitchen, Oxted" loading="lazy"><span class="cap">Modern family kitchen<small>Oxted</small></span></div>
-      <div class="folio reveal"><img src="https://kitchensbespoke.co.uk/wp-content/uploads/2024/03/The-Farmery-2-Large.jpeg" alt="Barn conversion kitchen, Penshurst" loading="lazy"><span class="cap">The Farmery<small>Penshurst · barn conversion</small></span></div>
+      <div class="folio tall reveal"><img src="assets/kit-1.jpg" alt="Character family home kitchen, East Grinstead" loading="lazy"><span class="cap">Character family home<small>East Grinstead</small></span></div>
+      <div class="folio reveal"><img src="assets/kit-2.jpg" alt="Large family home kitchen, Reigate" loading="lazy"><span class="cap">Large family home<small>Reigate</small></span></div>
+      <div class="folio reveal"><img src="assets/kit-3.jpg" alt="Detached family home kitchen, West Hoathly" loading="lazy"><span class="cap">The Retreat<small>West Hoathly</small></span></div>
+      <div class="folio reveal"><img src="assets/kit-4.jpg" alt="Country cottage kitchen, Ashurst Wood" loading="lazy"><span class="cap">Country cottage<small>Ashurst Wood</small></span></div>
+      <div class="folio reveal"><img src="assets/kit-5.jpg" alt="Large family kitchen, East Grinstead" loading="lazy"><span class="cap">Willow End<small>East Grinstead</small></span></div>
+      <div class="folio tall reveal"><img src="assets/kit-6.jpg" alt="Farmhouse shaker kitchen, Lingfield" loading="lazy"><span class="cap">The Farmhouse<small>Lingfield · classic Shaker</small></span></div>
+      <div class="folio reveal"><img src="assets/kit-7.jpg" alt="Stylish conversion kitchen, Crawley Down" loading="lazy"><span class="cap">Colville House<small>Crawley Down</small></span></div>
+      <div class="folio reveal"><img src="assets/kit-8.jpg" alt="Modern family kitchen, Oxted" loading="lazy"><span class="cap">Modern family kitchen<small>Oxted</small></span></div>
+      <div class="folio reveal"><img src="assets/kit-9.jpg" alt="Barn conversion kitchen, Penshurst" loading="lazy"><span class="cap">The Farmery<small>Penshurst · barn conversion</small></span></div>
     </div>
     <p class="folio-note">Photography from our completed projects · selected images by The Light Room Media</p>
   </div>
@@ -431,12 +277,19 @@ footer a:hover{color:var(--teal)}
         <p style="max-width:300px">Independent, family-run kitchen design studio in East Grinstead since 2008. Kitchens, bedrooms and home offices across Sussex, Surrey, Kent and London.</p>
       </div>
       <div>
+        <h4>What we make</h4>
+        <ul>
+          <li><a href="kitchens.html">Kitchens</a></li>
+          <li><a href="bedrooms.html">Bedrooms &amp; wardrobes</a></li>
+          <li><a href="home-offices.html">Home offices</a></li>
+        </ul>
+      </div>
+      <div>
         <h4>Explore</h4>
         <ul>
-          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#process">Our process</a></li>
-          <li><a href="#brands">Brands</a></li>
           <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#showroom">Showroom</a></li>
           <li><a href="#consult">Free consultation</a></li>
         </ul>
       </div>
