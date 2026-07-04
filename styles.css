@@ -90,6 +90,10 @@ header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.96);backdro
 .badge-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
 .badge{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:2px;padding:8px 16px;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#e8eaea}
 .badge .star{color:var(--teal)}
+a.badge{transition:.2s;cursor:pointer}
+a.badge:hover{background:rgba(255,255,255,.18);border-color:var(--teal)}
+a.badge .g{color:#4285F4}a.badge .o{color:#EA4335}a.badge .g2{color:#FBBC05}a.badge .b{color:#34A853}
+.badge .gold{color:#fbbc05}
 .hero h1{font-size:clamp(36px,5vw,64px);color:#fff;font-weight:300;letter-spacing:2px;text-transform:uppercase;max-width:820px}
 .hero h1 b{font-weight:600;color:var(--teal)}
 .hero .sub{margin:22px 0 34px;color:#cfd2d3;font-size:17px;max-width:560px;font-weight:400}
@@ -172,6 +176,16 @@ header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.96);backdro
 @media(max-width:960px){.reviews-grid{grid-template-columns:1fr}}
 .review-cta{margin-top:26px;text-align:center;font-size:14px;color:var(--muted)}
 .review-cta a{color:var(--teal-deep);font-weight:700}
+/* google rating highlight */
+.rating-highlight{display:flex;align-items:center;gap:30px;flex-wrap:wrap;background:var(--black);color:#fff;border-radius:var(--radius);padding:34px 44px;margin-bottom:40px}
+.rating-highlight .score{font-size:66px;font-weight:300;line-height:1;color:#fff}
+.rating-highlight .mid .stars{font-size:26px;letter-spacing:5px;color:#fbbc05;line-height:1}
+.rating-highlight .mid .lbl{font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:#cfd2d3;margin-top:10px}
+.rating-highlight .mid .lbl b{color:#fff}
+.rating-highlight .cta{margin-left:auto}
+.rating-highlight .gmark{font-weight:700}
+.rating-highlight .gmark .g{color:#4285F4}.rating-highlight .gmark .o{color:#EA4335}.rating-highlight .gmark .y{color:#FBBC05}.rating-highlight .gmark .gr{color:#34A853}
+@media(max-width:720px){.rating-highlight{padding:28px 26px;gap:20px}.rating-highlight .cta{margin-left:0;width:100%}.rating-highlight .cta .btn{width:100%}}
 
 /* consultation form */
 .consult{background:var(--teal-pale)}
